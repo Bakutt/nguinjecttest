@@ -114,8 +114,8 @@ namespace NGUInjector.Managers
             result.AddRange(equipped);
 
             // Finally, find locked items in inventory that aren't blacklisted
-            var invItems = Array.FindAll(ci, x => x.locked && x.equipment.isEquipment() && !IsPriority(x) && !IsBlacklisted(x));
-            result.AddRange(invItems);
+            //var invItems = Array.FindAll(ci, x => x.locked && x.equipment.isEquipment() && !IsPriority(x) && !IsBlacklisted(x));
+            //result.AddRange(invItems);
 
             // Make sure we filter out non-equips again, just in case one snuck into priorityboosts
             return result.FindAll(x => x.equipment.GetNeededBoosts().Total() > 0).ToArray();
