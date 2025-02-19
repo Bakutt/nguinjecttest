@@ -662,18 +662,18 @@ namespace NGUInjector
 
                 if (Settings.ManageInventory && !InventoryController.midDrag)
                 {
-                    ih[] converted = Character.inventory.GetConvertedInventory().ToArray();
-                    ih[] boostSlots = InventoryManager.GetBoostSlots(converted);
+                    //ih[] converted = Character.inventory.GetConvertedInventory().ToArray();
+                    //ih[] boostSlots = InventoryManager.GetBoostSlots(converted);
                     //InventoryManager.EnsureFiltered(converted);
                     //InventoryManager.ManageConvertibles(converted);
                     //InventoryManager.MergeEquipped(converted);
                     //InventoryManager.MergeInventory(converted);
-                    InventoryManager.MergeBoosts(converted);
+                    //InventoryManager.MergeBoosts(converted);
                     //InventoryManager.MergeGuffs(converted);
-                    InventoryManager.BoostInventory(boostSlots);
-                    InventoryManager.BoostInfinityCube();
+                    //InventoryManager.BoostInventory(boostSlots);
+                    //InventoryManager.BoostInfinityCube();
                     //InventoryManager.ManageBoostConversion(boostSlots);
-                    InventoryController.updateInventory();
+                    //InventoryController.updateInventory();
                 }
 
                 if (Settings.Autosave && Character.settings.dailySaveRewardTime.totalseconds >= 82800.0)
